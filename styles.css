@@ -1,0 +1,750 @@
+
+  body {
+  background-color: #119822;
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  position: relative;
+  margin: 0;
+}
+
+/* pretty background glow */
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  animation: cool-colors 20s infinite;
+ background: rgb(17,152,34);
+background: -moz-radial-gradient(circle, rgba(17,152,34,1) 0%, rgba(5,20,0,1) 24%);
+background: -webkit-radial-gradient(circle, rgba(17,152,34,1) 0%, rgba(5,20,0,1) 24%);
+background: radial-gradient(circle, rgba(17,152,34,1) 0%, rgba(5,20,0,1) 24%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#119822",endColorstr="#051400",GradientType=1); 
+}
+/* makin the glow move */
+@keyframes cool-colors {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+
+}
+
+/* begining of the hex tiles */
+.hex-container-one {
+  margin: 0;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-two {
+  margin: 92px;
+  margin-left: 53px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-three {
+  margin: 92px;
+  margin-left: -53px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-four {
+  margin: -92px;
+  margin-left: 53px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-five {
+  margin: -92px;
+  margin-left: -53px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-six {
+margin: -185px;
+  margin-left: 0px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-seven {
+margin: -185px;
+  margin-left: 106px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-eight {
+margin: -185px;
+  margin-left: -106px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-nine {
+margin: 0px;
+  margin-left: 106px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-ten {
+margin: 0px;
+  margin-left: -106px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-eleven {
+margin: 185px;
+  margin-left: 106px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-twelve {
+margin: 185px;
+  margin-left: -106px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirteen {
+  margin: 185px;
+  margin-left: 0px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourteen {
+  margin: 278px;
+  margin-left: -53px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-fifthteen {
+  margin: 278px;
+  margin-left: 53px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+
+}
+.hex-container-sixteen {
+  margin: 0px;
+  margin-left: 213px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventeen {
+  margin: 0px;
+  margin-left: -213px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-eightteen {
+  margin: 185px;
+  margin-left: -213px;
+  top: 50%;
+  position: absolute;
+ 
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-nineteen {
+  margin: -92px;
+  margin-left: -160px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-twenty {
+  margin: 92px;
+  margin-left: -160px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-twenty-one {
+  margin: 278px;
+  margin-left: -160px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+
+  z-index: 1;
+}
+.hex-container-twenty-two {
+  margin: 278px;
+  margin-left: 160px;
+
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-twenty-three {
+  margin: -92px;
+  margin-left: 160px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-twenty-four {
+  margin: 92px;
+  margin-left: 160px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-twenty-five {
+  margin: 185px;
+  
+  margin-left: 213px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-twenty-six {
+  margin: 371px;
+  margin-left: -213px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-twenty-seven {
+  margin: 371px;
+  margin-left: 213px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-twenty-eight {
+  margin: 371px;
+  margin-left: 0px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-twenty-nine {
+  margin: 0px;
+  margin-left: -428px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirty {
+  margin: 0px;
+  margin-left: 428px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirtyone {
+  margin: 92px;
+  margin-left: -374px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirtytwo{
+  margin: 92px;
+  margin-left: 374px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirtythree {
+  margin: -92px;
+  margin-left: -374px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirtyfour {
+  margin: -92px;
+  margin-left: 374px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirtyfive {
+  margin: -92px;
+  margin-left: -267px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirtysix {
+  margin: -92px;
+  margin-left: 267px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirtyseven {
+  margin: 92px;
+  margin-left: 267px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirtyeight {
+  margin: 92px;
+  margin-left: -267px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-thirtynine{
+  margin: 278px;
+  margin-left: -267px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourty {
+  margin: 278px;
+  margin-left: 267px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourtyone {
+  margin: -185px;
+  margin-left: -320px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourtytwo {
+  margin: -185px;
+  margin-left: 320px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourtythree {
+  margin: -185px;
+  margin-left: -213px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourtyfour {
+  margin: -185px;
+  margin-left: 213px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourtyfive {
+  margin: 185px;
+  margin-left: 213px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourtysix {
+  margin: 0px;
+  margin-left: -320px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourtyseven {
+  margin: 0px;
+  margin-left: 320px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourtyeight {
+  margin: 185px;
+  margin-left: -426px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fourtynine {
+  margin: 185px;
+  margin-left: 426px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fifty {
+  margin: 185px;
+  margin-left: -320px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-fifty-one {
+  margin: 185px;
+  margin-left: 320px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-x1 {
+  margin: -185px;
+  margin-left: 426px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-fiftyone {
+  margin: -185px;
+  margin-left: -426px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-fiftytwo {
+  margin: -278px;
+  margin-left: 373px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-fiftythree {
+  margin: -278px;
+  margin-left: -373px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-fiftyfour {
+  margin: 278px;
+  margin-left: -373px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-fiftyfive {
+  margin: 278px;
+  margin-left: 373px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-fiftysix {
+  margin: -278px;
+  margin-left: 266px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-fiftyseven {
+  margin: -278px;
+  margin-left: 159px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-fiftyeight {
+  margin: -278px;
+  margin-left: 52px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-fiftynine {
+  margin: -278px;
+  margin-left: -54px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-sixty {
+  margin: -278px;
+  margin-left: -160px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-sixtytwo {
+  margin: -278px;
+  margin-left: -266px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-sixtythree {
+  margin: -278px;
+  margin-left: -479px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-sixtyfour {
+  margin: -278px;
+  margin-left: 479px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.hex-container-sixtyfive {
+  margin: -278px;
+  margin-left: 585px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-sixtysix {
+  margin: -278px;
+  margin-left: -585px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-sixtyseven {
+  margin: -278px;
+  margin-left: -692px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-sixtyeight {
+  margin: -278px;
+  margin-left: 692px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-sixtynine {
+  margin: -185px;
+  margin-left: 533px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventy {
+  margin: -185px;
+  margin-left: -532px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventyone {
+  margin: -185px;
+  margin-left: -638px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventytwo {
+  margin: -185px;
+  margin-left: 639px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventythree {
+  margin: 92px;
+  margin-left: -482px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventyfour {
+  margin: 92px;
+  margin-left: 482px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventyfive {
+  margin: 186px;
+  margin-left: 534px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventysix {
+  margin: 186px;
+  margin-left: -534px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventyseven {
+  margin: 0px;
+  margin-left: -534px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventyeight {
+  margin: 0px;
+  margin-left: 534px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-seventynine {
+  margin: -92px;
+  margin-left: 480px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-eighty{
+  margin: -92px;
+  margin-left: -480px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+
+
+/* hex shape and color */
+.one {
+  width: 0;
+border-bottom: 30px solid #191919;
+border-left: 52px solid transparent;
+border-right: 52px solid transparent;
+}
+
+.one-one {
+  width: 104px;
+height: 60px;
+background-color: #191919;
+}
+
+.one-two {
+  width: 0;
+border-top: 30px solid #191919;
+border-left: 52px solid transparent;
+border-right: 52px solid transparent;
+}
