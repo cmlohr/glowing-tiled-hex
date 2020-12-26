@@ -8,8 +8,6 @@
   position: relative;
   margin: 0;
 }
-
-/* pretty background glow */
 .bg {
   position: fixed;
   top: -50%;
@@ -18,14 +16,14 @@
   bottom: -50%;
   width: 200%;
   height: 200vh;
-  animation: cool-colors 20s infinite;
- background: rgb(17,152,34);
-background: -moz-radial-gradient(circle, rgba(17,152,34,1) 0%, rgba(5,20,0,1) 24%);
-background: -webkit-radial-gradient(circle, rgba(17,152,34,1) 0%, rgba(5,20,0,1) 24%);
-background: radial-gradient(circle, rgba(17,152,34,1) 0%, rgba(5,20,0,1) 24%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#119822",endColorstr="#051400",GradientType=1); 
+  animation: cool-colors 30s infinite;
+ background: rgb(29,255,57);
+background: -moz-radial-gradient(circle, rgba(29,255,57,1) 0%, rgba(24,219,50,1) 7%, rgba(19,129,34,1) 18%, rgba(25,25,25,1) 37%);
+background: -webkit-radial-gradient(circle, rgba(29,255,57,1) 0%, rgba(24,219,50,1) 7%, rgba(19,129,34,1) 18%, rgba(25,25,25,1) 37%);
+background: radial-gradient(circle, rgba(29,255,57,1) 0%, rgba(24,219,50,1) 7%, rgba(19,129,34,1) 18%, rgba(25,25,25,1) 37%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1dff39",endColorstr="#191919",GradientType=1); 
 }
-/* makin the glow move */
+
 @keyframes cool-colors {
     0% { transform: translate(0,0) }
     10% { transform: translate(-5%,-5%) }
@@ -41,7 +39,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#119822",endCo
 
 }
 
-/* begining of the hex tiles */
+/* 0 index */
+/* --------------- */
 .hex-container-one {
   margin: 0;
   top: 50%;
@@ -49,42 +48,45 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#119822",endCo
   left: 50%;
   z-index: 1;
 }
-
+/* --------------- */
 .hex-container-two {
-  margin: 92px;
-  margin-left: 53px;
+  margin: 0px;
+  margin-left: 106px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-three {
-  margin: 92px;
-  margin-left: -53px;
+  margin: 0px;
+  margin-left: -106px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-four {
-  margin: -92px;
-  margin-left: 53px;
+  margin: 0px;
+  margin-left: 212px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+
 .hex-container-five {
-  margin: -92px;
-  margin-left: -53px;
+  margin: 0px;
+  margin-left: -212px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-six {
-margin: -185px;
-  margin-left: 0px;
+margin: 0px;
+  margin-left: 318px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -92,16 +94,17 @@ margin: -185px;
 }
 
 .hex-container-seven {
-margin: -185px;
-  margin-left: 106px;
+margin: 0px;
+  margin-left: -318px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-eight {
-margin: -185px;
-  margin-left: -106px;
+margin: 0px;
+  margin-left: 424px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -109,31 +112,33 @@ margin: -185px;
 }
 .hex-container-nine {
 margin: 0px;
-  margin-left: 106px;
+  margin-left: -424px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-ten {
 margin: 0px;
-  margin-left: -106px;
+  margin-left: 530px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-eleven {
-margin: 185px;
-  margin-left: 106px;
+margin: 0px;
+  margin-left: -530px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-twelve {
-margin: 185px;
-  margin-left: -106px;
+margin: 0px;
+  margin-left: 636px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -141,34 +146,34 @@ margin: 185px;
 }
 
 .hex-container-thirteen {
-  margin: 185px;
-  margin-left: 0px;
+  margin: 0px;
+  margin-left: -636px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
+/* --------------- */
 .hex-container-fourteen {
-  margin: 278px;
-  margin-left: -53px;
+  margin: 0px;
+  margin-left: 742px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-fifthteen {
-  margin: 278px;
-  margin-left: 53px;
+  margin: 0px;
+  margin-left: -742px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
-
 }
+/* --------------- */
 .hex-container-sixteen {
   margin: 0px;
-  margin-left: 213px;
+  margin-left: 848px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -176,24 +181,27 @@ margin: 185px;
 }
 .hex-container-seventeen {
   margin: 0px;
-  margin-left: -213px;
+  margin-left: -848px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
+
+
+/* margin 92 & -92 */
 .hex-container-eightteen {
-  margin: 185px;
-  margin-left: -213px;
+  margin: 92px;
+  margin-left: 53px;
   top: 50%;
   position: absolute;
- 
   left: 50%;
   z-index: 1;
 }
 .hex-container-nineteen {
   margin: -92px;
-  margin-left: -160px;
+  margin-left: -53px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -201,25 +209,24 @@ margin: 185px;
 }
 .hex-container-twenty {
   margin: 92px;
-  margin-left: -160px;
+  margin-left: -53px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-twenty-one {
-  margin: 278px;
-  margin-left: -160px;
+  margin: -92px;
+  margin-left: 53px;
   top: 50%;
   position: absolute;
   left: 50%;
-
   z-index: 1;
 }
+/* --------------- */
 .hex-container-twenty-two {
-  margin: 278px;
-  margin-left: 160px;
-
+  margin: 92px;
+  margin-left: 159px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -227,204 +234,189 @@ margin: 185px;
 }
 .hex-container-twenty-three {
   margin: -92px;
-  margin-left: 160px;
+  margin-left: 159px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-twenty-four {
-  margin: 92px;
-  margin-left: 160px;
+  margin: -92px;
+  margin-left: -159px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-twenty-five {
-  margin: 185px;
-  
-  margin-left: 213px;
+  margin: 92px;
+  margin-left: -159px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
+/* --------------- */
 .hex-container-twenty-six {
-  margin: 371px;
-  margin-left: -213px;
+  margin: 92px;
+  margin-left: -265px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-twenty-seven {
-  margin: 371px;
-  margin-left: 213px;
+  margin: 92px;
+  margin-left: 265px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-twenty-eight {
-  margin: 371px;
-  margin-left: 0px;
+  margin: -92px;
+  margin-left: 265px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-twenty-nine {
-  margin: 0px;
-  margin-left: -428px;
+  margin: -92px;
+  margin-left: -265px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
+/* --------------- */
 .hex-container-thirty {
-  margin: 0px;
-  margin-left: 428px;
+  margin: 92px;
+  margin-left: 371px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-thirtyone {
   margin: 92px;
-  margin-left: -374px;
+  margin-left: -371px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-thirtytwo{
-  margin: 92px;
-  margin-left: 374px;
+  margin: -92px;
+  margin-left: 371px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-thirtythree {
   margin: -92px;
-  margin-left: -374px;
+  margin-left: -371px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
+/* --------------- */
 .hex-container-thirtyfour {
   margin: -92px;
-  margin-left: 374px;
+  margin-left: 477px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-thirtyfive {
   margin: -92px;
-  margin-left: -267px;
+  margin-left: -477px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-thirtysix {
-  margin: -92px;
-  margin-left: 267px;
+  margin: 92px;
+  margin-left: 477px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-thirtyseven {
   margin: 92px;
-  margin-left: 267px;
+  margin-left: -477px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
+/* --------------- */
 .hex-container-thirtyeight {
   margin: 92px;
-  margin-left: -267px;
+  margin-left: 583px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-thirtynine{
-  margin: 278px;
-  margin-left: -267px;
+  margin: 92px;
+  margin-left: -583px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-fourty {
-  margin: 278px;
-  margin-left: 267px;
+  margin: -92px;
+  margin-left: 583px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-fourtyone {
-  margin: -185px;
-  margin-left: -320px;
+  margin: -92px;
+  margin-left: -583px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
+/* --------------- */
 .hex-container-fourtytwo {
-  margin: -185px;
-  margin-left: 320px;
+  margin: 92px;
+  margin-left: 689px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-fourtythree {
-  margin: -185px;
-  margin-left: -213px;
+  margin: 92px;
+  margin-left: -689px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-fourtyfour {
-  margin: -185px;
-  margin-left: 213px;
+  margin: -92px;
+  margin-left: 689px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
+/* --------------- missing hex ^ */
 .hex-container-fourtyfive {
-  margin: 185px;
-  margin-left: 213px;
+  margin: 92px;
+  margin-left: 795px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -432,8 +424,8 @@ margin: 185px;
 }
 
 .hex-container-fourtysix {
-  margin: 0px;
-  margin-left: -320px;
+  margin: 92px;
+  margin-left: -795px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -441,8 +433,8 @@ margin: 185px;
 }
 
 .hex-container-fourtyseven {
-  margin: 0px;
-  margin-left: 320px;
+  margin: -92px;
+  margin-left: 795px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -450,17 +442,17 @@ margin: 185px;
 }
 
 .hex-container-fourtyeight {
-  margin: 185px;
-  margin-left: -426px;
+  margin: -92px;
+  margin-left: -795px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
+/* --------------- */
 .hex-container-fourtynine {
-  margin: 185px;
-  margin-left: 426px;
+  margin: 92px;
+  margin-left: 901px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -468,8 +460,8 @@ margin: 185px;
 }
 
 .hex-container-fifty {
-  margin: 185px;
-  margin-left: -320px;
+  margin: 92px;
+  margin-left: -901px;
   top: 50%;
   position: absolute;
   left: 50%;
@@ -477,255 +469,436 @@ margin: 185px;
 }
 
 .hex-container-fifty-one {
-  margin: 185px;
-  margin-left: 320px;
+  margin: -92px;
+  margin-left: 901px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-x1 {
-  margin: -185px;
-  margin-left: 426px;
+  margin: -92px;
+  margin-left: -901px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-fiftyone {
-  margin: -185px;
-  margin-left: -426px;
+  margin: 184px;
+  margin-left: 0px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-fiftytwo {
-  margin: -278px;
-  margin-left: 373px;
+  margin: -184px;
+  margin-left: 0px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-fiftythree {
-  margin: -278px;
-  margin-left: -373px;
+  margin: -184px;
+  margin-left: 106px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-fiftyfour {
-  margin: 278px;
-  margin-left: -373px;
+  margin: -184px;
+  margin-left: -106px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-fiftyfive {
-  margin: 278px;
-  margin-left: 373px;
+  margin: 184px;
+  margin-left: 106px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-fiftysix {
-  margin: -278px;
-  margin-left: 266px;
+  margin: 184px;
+  margin-left: -106px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-fiftyseven {
-  margin: -278px;
-  margin-left: 159px;
+  margin: 184px;
+  margin-left: 212px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-fiftyeight {
-  margin: -278px;
-  margin-left: 52px;
+  margin: 184px;
+  margin-left: -212px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-fiftynine {
-  margin: -278px;
-  margin-left: -54px;
+  margin: -184px;
+  margin-left: -212px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-sixty {
-  margin: -278px;
-  margin-left: -160px;
+  margin: -184px;
+  margin-left: 212px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-sixtytwo {
-  margin: -278px;
-  margin-left: -266px;
+  margin: -184px;
+  margin-left: -318px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-sixtythree {
-  margin: -278px;
-  margin-left: -479px;
+  margin: 184px;
+  margin-left: -318px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-sixtyfour {
-  margin: -278px;
-  margin-left: 479px;
+  margin: 184px;
+  margin-left: 318px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
-
 .hex-container-sixtyfive {
-  margin: -278px;
-  margin-left: 585px;
+  margin: -184px;
+  margin-left: 318px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-sixtysix {
-  margin: -278px;
-  margin-left: -585px;
+  margin: -184px;
+  margin-left: 424px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-sixtyseven {
-  margin: -278px;
-  margin-left: -692px;
+  margin: -184px;
+  margin-left: -424px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-sixtyeight {
-  margin: -278px;
-  margin-left: 692px;
+  margin: 184px;
+  margin-left: 424px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-sixtynine {
-  margin: -185px;
-  margin-left: 533px;
+  margin: 184px;
+  margin-left: -424px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-seventy {
-  margin: -185px;
-  margin-left: -532px;
+  margin: -184px;
+  margin-left: -530px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-seventyone {
-  margin: -185px;
-  margin-left: -638px;
+  margin: -184px;
+  margin-left: 530px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-seventytwo {
-  margin: -185px;
-  margin-left: 639px;
+  margin: 184px;
+  margin-left: -530px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-seventythree {
-  margin: 92px;
-  margin-left: -482px;
+  margin: 184px;
+  margin-left: 530px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-seventyfour {
-  margin: 92px;
-  margin-left: 482px;
+  margin: 184px;
+  margin-left: 636px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-seventyfive {
-  margin: 186px;
-  margin-left: 534px;
+  margin: 184px;
+  margin-left: -636px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-seventysix {
-  margin: 186px;
-  margin-left: -534px;
+  margin: -184px;
+  margin-left: -636px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-seventyseven {
-  margin: 0px;
-  margin-left: -534px;
+  margin: -184px;
+  margin-left: 636px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
+/* --------------- */
 .hex-container-seventyeight {
-  margin: 0px;
-  margin-left: 534px;
+  margin: 184px;
+  margin-left: 742px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-seventynine {
-  margin: -92px;
-  margin-left: 480px;
+  margin: -184px;
+  margin-left: 742px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 .hex-container-eighty{
-  margin: -92px;
-  margin-left: -480px;
+  margin: -184px;
+  margin-left: -742px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q21{
+  margin: 184px;
+  margin-left: -742px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+/* --------------- */
+.hex-container-q20{
+  margin: 184px;
+  margin-left: -848px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q19{
+  margin: -184px;
+  margin-left: -848px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q18{
+  margin: 184px;
+  margin-left: 848px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q17{
+  margin: -184px;
+  margin-left: 848px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+/* --------------- */
+.hex-container-q16{
+  margin: 276px;
+  margin-left: 53px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q15{
+  margin: 276px;
+  margin-left: -53px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q14{
+  margin: -276px;
+  margin-left: -53px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q13{
+  margin: -276px;
+  margin-left: 53px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+/* --------------- */
+.hex-container-q12{
+  margin: 276px;
+  margin-left: -159px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q11{
+  margin: 276px;
+  margin-left: 159px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q10{
+  margin: -276px;
+  margin-left: -159px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q9{
+  margin: -276px;
+  margin-left: 159px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+/* --------------- */
+.hex-container-q8{
+  margin: -276px;
+  margin-left: 265px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q7{
+  margin: 276px;
+  margin-left: -265px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q6{
+  margin: -276px;
+  margin-left: -265px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q5{
+  margin: 276px;
+  margin-left: 265px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+/* --------------- */
+.hex-container-q4{
+  margin: 276px;
+  margin-left: 371px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q3{
+  margin: 276px;
+  margin-left: -371px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+.hex-container-q2{
+  margin: -276px;
+  margin-left: 371px;
   top: 50%;
   position: absolute;
   left: 50%;
   z-index: 1;
 }
 
+.hex-container-q1{
+  margin: -276px;
+  margin-left: -371px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+/* --------------- */
 
 
 /* hex shape and color */
