@@ -1,1 +1,1 @@
-glowing-tiled-hex, WORK IN PROGRESS! This is a background concept of tile hex's with a glowing animated background
+glowing-tiled-hex, This is a landing background concept of tile hex's with a glowing animated background
